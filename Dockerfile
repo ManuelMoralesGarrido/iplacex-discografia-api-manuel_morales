@@ -5,7 +5,6 @@ RUN gradle build -x test --no-daemon
 
 FROM openjdk:17-jdk-slim
 WORKDIR /app
-# Aquí copiamos el archivo compilado. 
 COPY --from=build /app/build/libs/discografia-1.jar app.jar
 EXPOSE 8080
 ENTRYPOINT ["java", "-jar", "app.jar"]
