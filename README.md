@@ -1,1 +1,1 @@
-# iplacex-discografia-api-manuel_morales
+API REST Spring Boot para administración de discografía
